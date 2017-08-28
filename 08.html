@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <div class="box a">A</div>
+    <div class="box a">A</div>
+    <div class="box a">A</div>
+    <div class="box a">A</div>
+    <div class="box a">A</div>
+    <div class="box a">A</div>
+    <div class="box a">A</div>
+    <div class="box a">A</div>
+    <div class="box a">A</div>
+    <div class="box a">A</div>
+    <div class="box a">A</div>
+    <div class="box a">A</div>
+    <div class="box a">A</div>
+    <div class="box a">A</div>
+    <div class="box a">A</div>
+    <div class="box a">A</div>
+    <div class="box a">A</div>
+    <div class="box a">A</div>
+    <div class="box a">A</div>
+    <div class="box a">A</div>
+    <div class="box a">A</div>
+    <div class="box a">A</div>
+    <div class="box a">A</div>
+    <div class="box a">A</div>
+    <div class="box a">A</div>
+    <div class="box a">A</div>
+</div>
+<style>
+    .container {
+        display: grid;
+        grid-gap: 10px;
+        height: 100vh;
+        grid-template-columns: [start] repeat(3, [col-sml-start] minmax(20px, auto) [col-sml-end col-med-start] minmax(40px, auto) [col-med-end col-sml-start] minmax(20px, auto) [col-sml-end col-lrg-start] minmax(80px, auto) [col-lrg-end]) [end];
+    }
+
+    .box {
+        background-color: dodgerblue;
+        font-size: 20px;
+    }
+</style>
+</body>
+</html>
