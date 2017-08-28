@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <div class="left-sidebar">Left sidebar</div>
+    <div class="main-content">Main content</div>
+    <div class="right-container">Right sidebar</div>
+    <div class="footer">Footer</div>
+</div>
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: [left-sidebar-start] 1fr [left-sidebar-end main-content-start] 3fr [main-content-end right-sidebar-start] 1fr [right-sidebar-end];
+        grid-template-rows: [body-start] 4fr [body-end footer-start] 1fr [footer-end];
+        grid-gap: 8px;
+        height: 100vh;
+    }
+
+    .container > * {
+        background-color: palegoldenrod;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer {
+        grid-column: main-content-start / right-sidebar-end;
+    }
+
+    .left-sidebar {
+        grid-row: body-start / footer-end;
+    }
+</style>
+</body>
+</html>
