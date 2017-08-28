@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <div class="grid-item">X</div>
+    <div class="grid-item">
+        <video src="http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_1mb.mp4"></video>
+    </div>
+    <div class="grid-item">X</div>
+    <div class="grid-item">X</div>
+    <div class="grid-item">
+        <video src="http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_2mb.mp4" controls></video>
+    </div>
+    <div class="grid-item">X</div>
+    <div class="grid-item">X</div>
+    <div class="grid-item">X</div>
+    <div class="grid-item">X</div>
+    <div class="grid-item">X</div>
+</div>
+<style>
+    .container {
+        height: 100vh;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 4fr 1fr;
+    }
+
+    .grid-item {
+        background: lightgreen;
+        font-size: 40px;
+    }
+</style>
+</body>
+</html>
