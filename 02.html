@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+</div>
+<style>
+    .container {
+        height: 100vh;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 100px 200px auto auto;
+    }
+
+    .grid-item {
+        background-color: skyblue;
+    }
+
+    .grid-item:nth-of-type(2) {
+        grid-row-start: span 2;
+    }
+
+    .grid-item:nth-of-type(6) {
+        grid-column-start: 3;
+        grid-column-end: span 2;
+    }
+
+</style>
+</body>
+</html>
