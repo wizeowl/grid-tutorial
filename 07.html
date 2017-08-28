@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <div class="box a">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus dolore, dolorem eius enim eveniet exercitationemquibusdam fugit iusto labore laborum mollitia nostrum quam saepe unde vel velit! Aut deleniti eaque quae?</div>
+    <div class="box b">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium minima nostrum quibusdam quis reprehenderit veniam voluptatibus! Aliquam aliquid debitis deleniti dignissimos ea ipsa laboriosam minus odit placeat repudiandae sapiente, veniam.</div>
+</div>
+<style>
+    .container {
+        display: grid;
+        grid-gap: 30px;
+        height: 100vh;
+        grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 4fr);
+    }
+
+    .box {
+        background-color: lightgreen;
+    }
+</style>
+</body>
+</html>
